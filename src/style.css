@@ -1,0 +1,103 @@
+/* Clear any browser default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Change highlight colour */
+::selection {
+  background: yellowgreen;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.colors {
+  color: #db1f48;
+  color: #004369;
+  color: #01949a;
+  color: #e5ddc8;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  min-height: 100px;
+  background-color: #004369;
+}
+
+.logo {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: white;
+  font-weight: bold;
+  font-size: 2.5rem;
+  transition: color 1s;
+  width: 45%;
+}
+
+.logo:hover {
+  color: #db1f48;
+}
+
+.nav-links {
+  display: flex;
+  margin-left: 5%;
+  width: 50%;
+}
+
+.nav-links a {
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-color: black;
+  transition: background-color 0.5s;
+}
+
+.nav-links a:hover {
+  background-color: #db1f48;
+}
+
+.content {
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.jumbo {
+  padding: 10px;
+  background-color: black;
+}
+
+.jumbo h1 {
+  font-size: 4rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  max-width: 450px;
+  color: white;
+}
+.jumbo h1 span {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: #db1f48;
+}
