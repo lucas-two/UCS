@@ -7,6 +7,11 @@
   color: #e5ddc8;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 /* Clear any browser default styles */
 * {
   margin: 0;
@@ -79,6 +84,41 @@ body {
   margin: 2rem;
   display: flex;
   flex-direction: column;
+}
+
+.page-footer {
+  background-color: #2e2e2e;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  justify-content: space-between;
+}
+
+.page-footer .copyright {
+  color: #6b6b6b;
+  font-size: 0.75rem;
+}
+
+.page-footer .logo {
+  color: #a5a5a5;
+  font-weight: bold;
+}
+
+.page-footer .links-to-socials a {
+  font-size: 2rem;
+  color: #a5a5a5;
+  transition: color 0.25s;
+  margin-right: 0.5rem;
+}
+
+.page-footer .links-to-socials a:last-child {
+  margin-right: 0;
+}
+
+.page-footer .links-to-socials a:hover {
+  color: #838383;
 }
 
 .container {
