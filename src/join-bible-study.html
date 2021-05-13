@@ -12,6 +12,10 @@
   <body>
     <header class="page-header">
       <nav class="nav-bar">
+        <div class="logo">
+          <div class="icon"><i class="fas fa-cross"></i></div>
+          <div class="text">UCS</div>
+        </div>
         <a href="./index.html" class="nav-logo">
           Umford Christian Students
         </a>
@@ -33,14 +37,44 @@
     </header>
     <div class="page-content">
       <div id="join-bible-study">
-        Join Bible Study content
+        <form class="join-form">
+          <div class="field">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Enter first name">
+          </div>
+          <div class="field">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Enter last name">
+          </div>
+          <div class="field">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter phone number">
+          </div>
+          <div class="field">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com">
+          </div>
+          <div class="field">
+            <label for="bible-study">Bible Study:</label>
+            <select id="bible-study" name="email"> 
+              <option>Option 1</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+              <option>Option 4</option>
+            </select>
+          </div>
+          <div class="submit-button">
+            <input type="submit">
+          </div>
+        </form>
       </div>
     </div>
     <footer class="page-footer">
       <div class="copyright">&copy; Copyright 2021, UCS</div>
       <div class="container">
         <div class="logo">
-          UCS
+          <div class="icon"><i class="fas fa-cross"></i></div>
+          <div class="text">UCS</div>
         </div>
         <div class="links-to-socials">
           <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>

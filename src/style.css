@@ -18,6 +18,25 @@ body {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
+  box-shadow: none;
+  outline: 0;
+}
+
+.logo {
+  display: flex;
+  font-weight: bold;
+}
+
+.logo .icon {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  padding: 0.5rem;
+}
+
+.logo .text {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  padding: 0.5rem;
 }
 
 /* NAVIGATION BAR */
@@ -41,6 +60,17 @@ body {
 }
 .nav-logo:hover {
   color: #db1f48;
+}
+
+.nav-bar .logo .icon {
+  background-color: #770c23;
+}
+.nav-bar .logo .text {
+  background-color: #db1f48;
+}
+
+.nav-bar .logo {
+  margin-right: 1rem;
 }
 
 .nav-links {
@@ -126,6 +156,14 @@ body {
   margin-right: 1rem;
 }
 
+.page-footer .container .logo .icon {
+  background-color: #575757;
+  color: #a5a5a5;
+}
+.page-footer .container .logo .text {
+  background-color: #3d3d3d;
+}
+
 /* HOME PAGE */
 #home-welcome {
   margin-bottom: 1rem;
@@ -203,6 +241,10 @@ body {
   background-color: #222222;
 }
 
+#whats-on .info h2 {
+  color: #db1f48;
+}
+
 /* WHO ARE WE? PAGE */
 
 #who-are-we .container {
@@ -225,4 +267,31 @@ body {
 
 #who-are-we .info ul {
   margin-left: 1rem;
+}
+
+/* JOIN BIBLE STUDY PAGE */
+
+#join-bible-study .join-form {
+  width: 300px;
+}
+
+#join-bible-study .join-form .field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+#join-bible-study .join-form .field input,
+#join-bible-study .join-form .field select {
+  padding: 0.25rem;
+}
+
+#join-bible-study .join-form .submit-button {
+  padding-top: 0.5rem;
+}
+
+#join-bible-study .join-form .submit-button input {
+  padding: 0.25rem;
+  width: 10rem;
+  background-color: #5d31ff;
 }
