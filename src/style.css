@@ -46,7 +46,7 @@ body {
   padding: 0 20px;
   width: 100%;
   min-height: 100px;
-  background-color: #004369;
+  background-color: #002c47;
 }
 
 .nav-logo {
@@ -59,14 +59,14 @@ body {
   width: 45%;
 }
 .nav-logo:hover {
-  color: #db1f48;
+  color: #e0244d;
 }
 
 .nav-bar .logo .icon {
   background-color: #770c23;
 }
 .nav-bar .logo .text {
-  background-color: #db1f48;
+  background-color: #e0244d;
 }
 
 .nav-bar .logo {
@@ -87,16 +87,16 @@ body {
   align-items: center;
   text-align: center;
   color: white;
-  background-color: #191919;
+  background-color: #000000;
   transition: background-color 0.25s;
 }
 .nav-links a:hover {
-  background-color: #db1f48;
+  background-color: #e0244d;
 }
 
 /* GENERIC BODY CONTENT */
 body {
-  background-color: #191919;
+  background-color: #000000;
   color: white;
   display: flex;
   flex-direction: column;
@@ -184,7 +184,7 @@ body {
 #home-welcome .title-text h1 span {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
-  color: #db1f48;
+  color: #e0244d;
 }
 
 #home-page-links .box {
@@ -238,11 +238,15 @@ body {
 #whats-on .info {
   flex: 1;
   padding: 1rem;
-  background-color: #222222;
+  background-color: #202020;
 }
 
 #whats-on .info h2 {
-  color: #db1f48;
+  color: white;
+  background-color: #e0244d;
+  width: 215px;
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 
 /* WHO ARE WE? PAGE */
@@ -273,25 +277,86 @@ body {
 
 #join-bible-study .join-form {
   width: 300px;
+  height: 500px;
+  background-color: #202020;
+  padding: 2rem;
+  margin-right: 1rem;
+}
+
+#join-bible-study .join-form h3 {
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+
+#join-bible-study .join-form label {
+  color: #d8d8d8;
+  margin-bottom: 0.4rem;
 }
 
 #join-bible-study .join-form .field {
   display: flex;
   flex-direction: column;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 #join-bible-study .join-form .field input,
 #join-bible-study .join-form .field select {
-  padding: 0.25rem;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: #2c2c2c;
 }
 
 #join-bible-study .join-form .submit-button {
   padding-top: 0.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 #join-bible-study .join-form .submit-button input {
   padding: 0.25rem;
+  border-radius: 0.25rem;
   width: 10rem;
-  background-color: #5d31ff;
+  height: 2rem;
+  background-color: #e0244d;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#join-bible-study .join-form .submit-button input:hover {
+  background-color: #a51836;
+}
+
+#join-bible-study .container {
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+#join-bible-study .container:last-child {
+  margin-bottom: 0;
+}
+
+#join-bible-study .bible-studies-table,
+#join-bible-study .bible-studies-table th,
+#join-bible-study .bible-studies-table td {
+  border: 1px solid #000;
+}
+
+#join-bible-study .bible-studies-table {
+  border-collapse: collapse;
+  height: 500px;
+}
+
+#join-bible-study .bible-studies-table thead th {
+  background-color: #2c2c2c;
+  padding: 0.75rem;
+}
+
+#join-bible-study .bible-studies-table tbody td {
+  background-color: #222222;
+  padding: 1rem;
 }
