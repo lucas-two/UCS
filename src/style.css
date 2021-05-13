@@ -275,32 +275,36 @@ body {
 
 /* JOIN BIBLE STUDY PAGE */
 
+/* Note: Same form used for get-connected page*/
+
 #join-bible-study .join-form {
-  width: 300px;
   height: 500px;
+}
+.join-form {
+  width: 300px;
   background-color: #202020;
   padding: 2rem;
   margin-right: 1rem;
 }
 
-#join-bible-study .join-form h3 {
+.join-form h3 {
   padding-bottom: 1.5rem;
   text-align: center;
 }
 
-#join-bible-study .join-form label {
+.join-form label {
   color: #d8d8d8;
   margin-bottom: 0.4rem;
 }
 
-#join-bible-study .join-form .field {
+.join-form .field {
   display: flex;
   flex-direction: column;
   margin-bottom: 0.75rem;
 }
 
-#join-bible-study .join-form .field input,
-#join-bible-study .join-form .field select {
+.join-form .field input,
+.join-form .field select {
   color: #fff;
   padding: 0.5rem;
   border-radius: 0.25rem;
@@ -308,13 +312,13 @@ body {
   background-color: #2c2c2c;
 }
 
-#join-bible-study .join-form .submit-button {
+.join-form .submit-button {
   padding-top: 0.5rem;
   display: flex;
   justify-content: center;
 }
 
-#join-bible-study .join-form .submit-button input {
+.join-form .submit-button input {
   padding: 0.25rem;
   border-radius: 0.25rem;
   width: 10rem;
@@ -327,7 +331,7 @@ body {
   transition: background-color 0.3s;
 }
 
-#join-bible-study .join-form .submit-button input:hover {
+.join-form .submit-button input:hover {
   background-color: #a51836;
 }
 
@@ -359,4 +363,10 @@ body {
 #join-bible-study .bible-studies-table tbody td {
   background-color: #222222;
   padding: 1rem;
+}
+
+/* GET CONNECTED PAGE */
+#get-connected .container {
+  justify-content: center;
+  margin-bottom: 1rem;
 }
