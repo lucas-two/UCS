@@ -1,11 +1,4 @@
 /* GENERIC CONTENT */
-.colors {
-  color: #db1f48;
-  color: #004369;
-  color: #01949a;
-  color: #e5ddc8;
-}
-
 html,
 body {
   height: 100%;
@@ -39,6 +32,10 @@ body {
   padding: 0.5rem;
 }
 
+.muted {
+  color: #a1a1a1;
+}
+
 /* NAVIGATION BAR */
 .nav-bar {
   display: flex;
@@ -58,25 +55,15 @@ body {
   transition: color 0.3s;
   width: 45%;
 }
+
 .nav-logo:hover {
   color: #e0244d;
-}
-
-.nav-bar .logo .icon {
-  background-color: #770c23;
-}
-.nav-bar .logo .text {
-  background-color: #e0244d;
-}
-
-.nav-bar .logo {
-  margin-right: 1rem;
 }
 
 .nav-links {
   display: flex;
   margin-left: 5%;
-  width: 50%;
+  width: 55%;
 }
 .nav-links a {
   padding: 0.5rem;
@@ -89,6 +76,7 @@ body {
   color: white;
   background-color: #000000;
   transition: background-color 0.25s;
+  white-space: nowrap;
 }
 .nav-links a:hover {
   background-color: #e0244d;
@@ -176,7 +164,6 @@ body {
 #home-welcome .title-text h1 {
   font-size: 4rem;
   font-family: Georgia, "Times New Roman", Times, serif;
-  max-width: 450px;
   color: white;
 }
 
@@ -216,9 +203,18 @@ body {
 
 /* WHAT'S ON? PAGE*/
 
+#whats-on {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #whats-on .container {
   justify-content: center;
   margin-bottom: 1rem;
+  width: 85%;
 }
 
 #whats-on .container:last-child {
@@ -227,12 +223,9 @@ body {
 
 #whats-on .image {
   margin-right: 1rem;
-}
-
-#whats-on .image {
-  height: 350px;
-  flex: 1;
-  border: dotted 3px grey;
+  max-width: 600px;
+  max-height: 350px;
+  overflow: hidden;
 }
 
 #whats-on .info {
@@ -241,12 +234,8 @@ body {
   background-color: #202020;
 }
 
-#whats-on .info h2 {
-  color: white;
-  background-color: #e0244d;
-  width: 215px;
-  padding: 1rem;
-  border-radius: 0.5rem;
+#whats-on .info h2 i {
+  color: #e0244d;
 }
 
 /* WHO ARE WE? PAGE */
@@ -255,22 +244,25 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 10rem;
-  margin-right: 10rem;
 }
 
 #who-are-we h1 {
   margin-bottom: 1rem;
 }
 
-#who-are-we .info p,
-#who-are-we .info ul li {
-  font-size: 1.25rem;
-  font-family: Georgia, "Times New Roman", Times, serif;
+#who-are-we .container ul {
+  font-size: 1.5rem;
 }
 
-#who-are-we .info ul {
-  margin-left: 1rem;
+#who-are-we .container .highlight {
+  color: #e0244d;
+  font-weight: bold;
+}
+
+#who-are-we iframe {
+  margin-top: 0.5rem;
+  width: 928px;
+  height: 522px;
 }
 
 /* JOIN BIBLE STUDY PAGE */
@@ -352,7 +344,7 @@ body {
 
 #join-bible-study .bible-studies-table {
   border-collapse: collapse;
-  height: 500px;
+  overflow: hidden;
 }
 
 #join-bible-study .bible-studies-table thead th {
@@ -365,8 +357,140 @@ body {
   padding: 1rem;
 }
 
+#join-bible-study .search-bar {
+  display: flex;
+  margin-bottom: 0.25rem;
+}
+
+#join-bible-study .search-bar .search-field {
+  background-color: #2c2c2c;
+  color: #fff;
+  padding: 0.5rem;
+  border: none;
+  flex:1;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+#join-bible-study .search-bar .submit-button {
+  color: #fff;
+  background-color: #2c2c2c;
+  width: 2.5rem;
+  border: none;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  transition: color 0.25s;
+  cursor: pointer;
+
+}
+
+#join-bible-study .search-bar .submit-button:hover{
+  color: #e0244d;
+}
+
+#join-bible-study .bible-study-container {
+  height: 500px;
+}
+
 /* GET CONNECTED PAGE */
 #get-connected .container {
   justify-content: center;
   margin-bottom: 1rem;
 }
+
+/* MOBILE VERSION */
+@media screen and (max-width: 992px) {
+  .nav-bar {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    margin-left: 0;
+    width: 50%;
+  }
+
+  .nav-logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Home Page */
+
+  #home .container {
+    justify-content: center;
+    align-items: center;
+  }
+  #home-welcome {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  #home-welcome .image {
+    max-width: 600px;
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-right: 0;
+    overflow: hidden;
+    object-fit: scale-down;
+  }
+
+  #home-page-links {
+    flex-direction: column;
+  }
+
+  #home-page-links .box {
+    background-color: #222222;
+    margin-bottom: 1rem;
+    height: 75px;
+    margin-right: 0;
+  }
+
+  /* What's On Page */
+
+  #whats-on .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #whats-on .container .title,
+  #whats-on .container .subheading{
+    text-align: center;
+  }
+
+  #whats-on .info {
+    background-color: inherit;
+  }
+
+  /* Who are we? page */
+  #who-are-we iframe {
+    width: 640px;
+    height: 360px;
+  }
+
+  /* Join a Bible study Page */
+  /* NOTE: There's a bug with the table sizing that I wasn't able to solve. */
+
+  #join-bible-study .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #join-bible-study .join-form {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Who are we? page */
+  #who-are-we iframe {
+    width: 352px;
+    height: 198px;
+  }
+}
+

@@ -16,17 +16,17 @@
           Umford Christian Students
         </a>
         <div class="nav-links">
-          <a href="./whats-on.html">
-            What's on?
-          </a>
-          <a href="./join-bible-study.html">
-            Join a Bible study
-          </a>
           <a href="./who-are-we.html">
             Who are we?
           </a>
+          <a href="./whats-on.html">
+            What's on?
+          </a>
           <a href="./get-connected.html">
             Get connected
+          </a>
+          <a href="./join-bible-study.html">
+            Join a Bible study
           </a>
         </div>
       </nav>
@@ -37,7 +37,10 @@
           <h1>Join a Bible study</h1>
         </div>
         <div class="container">
-          <form class="join-form">
+          <p class="muted">Join a Bible study and explore who Jesus is for yourself.</p>
+        </div>
+        <div class="container">
+          <form class="join-form" method="POST">
             <h3>Register to join</h3>
             <div class="field">
               <label for="first-name">First Name:</label>
@@ -57,18 +60,27 @@
             </div>
             <div class="field">
               <label for="bible-study">Bible Study:</label>
-              <select id="bible-study" name="email"> 
-                <option>Option 1</option>
-                <option>Option 2</option>
-                <option>Option 3</option>
-                <option>Option 4</option>
+              <select id="bible-study" name="bible-study">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
               </select>
             </div>
             <div class="submit-button">
-              <input type="submit">
+              <input name="submit" type="submit">
             </div>
           </form>
-          <table class="bible-studies-table">
+          <div class="bible-study-container">
+            <form class="search-bar" method="GET">
+              <input class="search-field" placeholder="Search for Bible study..." type="text" name="biblestudy" id="biblestudy"/>
+              <button class="submit-button" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+            <table class="bible-studies-table">
             <thead>
               <tr>
                 <th>Study</th>
@@ -81,62 +93,49 @@
             <tbody>
               <tr>
                 <td>1</td>
-                <td>Tuesday</td>
-                <td>4:30pm</td>
-                <td>Function Cafe</td>
-                <td>John, Issac, Jim</td>
+                <td>Monday</td>
+                <td>3:00pm</td>
+                <td>B3 CAFE</td>
+                <td>Jim, Tony, Alex</td>
               </tr>
               <tr>
                 <td>2</td>
-                <td>Monday</td>
-                <td>2:30pm</td>
-                <td>Function Cafe</td>
-                <td>Suzan, Sophie, Rachel</td>
+                <td>Wednesday</td>
+                <td>1:00pm</td>
+                <td>B2 CAFE</td>
+                <td>Mike, Tim</td>
               </tr>
               <tr>
                 <td>3</td>
-                <td>Tuesday</td>
-                <td>4:30pm</td>
-                <td>Function Cafe</td>
-                <td>John, Issac, Jim</td>
+                <td>Thursday</td>
+                <td>12:00pm</td>
+                <td>B2 ROOM 1</td>
+                <td>Rachel, Suzan, Abby</td>
               </tr>
               <tr>
                 <td>4</td>
-                <td>Monday</td>
-                <td>2:30pm</td>
-                <td>Function Cafe</td>
-                <td>Suzan, Sophie, Rachel</td>
+                <td>Tuesday</td>
+                <td>11:00am</td>
+                <td>B3 CAFE</td>
+                <td>Zack, Jimtin, Rantony, Mann, Louis</td>
               </tr>
               <tr>
                 <td>5</td>
-                <td>Tuesday</td>
-                <td>4:30pm</td>
-                <td>Function Cafe</td>
-                <td>John, Issac, Jim</td>
+                <td>Friday</td>
+                <td>10:00am</td>
+                <td>B1 ROOM 1</td>
+                <td>Alex, Michael, Dave</td>
               </tr>
               <tr>
                 <td>6</td>
-                <td>Monday</td>
-                <td>2:30pm</td>
-                <td>Function Cafe</td>
-                <td>Suzan, Sophie, Rachel</td>
-              </tr>
-              <tr>
-                <td>7</td>
                 <td>Tuesday</td>
-                <td>4:30pm</td>
-                <td>Function Cafe</td>
-                <td>John, Issac, Jim</td>
-              </tr>
-              <tr>
-                <td>8</td>
-                <td>Monday</td>
-                <td>2:30pm</td>
-                <td>Function Cafe</td>
-                <td>Suzan, Sophie, Rachel</td>
+                <td>3:30pm</td>
+                <td>B3 CAFE</td>
+                <td>Greg, Jim, Bob</td>
               </tr>
             </tbody>
           </table>
+          </div>
         </div>
       </div>
     </div>
@@ -148,7 +147,7 @@
         </div>
         <div class="links-to-socials">
           <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-          <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
+          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
     </footer>
