@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Using font-awesome for icons -->
+    <script src="https://kit.fontawesome.com/bb33b8b065.js" crossorigin="anonymous"></script>
+    <title>Umford Christian Students</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.jpg"/>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="nav-bar">
+        <a href="./index.html" class="nav-logo">
+          Umford Christian Students
+        </a>
+        <div class="nav-links">
+          <a href="./who-are-we.html">
+            Who are we?
+          </a>
+          <a href="./whats-on.html">
+            What's on?
+          </a>
+          <a href="./get-connected.html">
+            Get connected
+          </a>
+          <a href="./join-bible-study.html">
+            Join a Bible study
+          </a>
+        </div>
+      </nav>
+    </header>
+    <div class="page-content">
+      <div id="join-bible-study">
+        <div class="container">
+          <h1>Join a Bible study</h1>
+        </div>
+        <div class="container">
+          <p class="muted">Join a Bible study and explore who Jesus is for yourself.</p>
+        </div>
+        <div class="container">
+          <form class="join-form" action="./bible-study-submission.html">
+            <h3>Register to join</h3>
+            <div class="field">
+              <label for="first-name">First Name:</label>
+              <input type="text" id="first-name" name="first-name" placeholder="Enter first name" required>
+            </div>
+            <div class="field">
+              <label for="last-name">Last Name:</label>
+              <input type="text" id="last-name" name="last-name" placeholder="Enter last name" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
+            </div>
+            <div class="field">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="example@email.com" required>
+            </div>
+            <div class="field">
+              <label for="bible-study">Bible Study:</label>
+              <select id="bible-study" name="bible-study" required>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+              </select>
+            </div>
+            <div class="submit-button">
+              <input name="submit" type="submit">
+            </div>
+          </form>
+          <div class="bible-study-container">
+            <form class="search-bar" method="GET">
+              <input class="search-field" placeholder="Search for Bible study..." type="text" name="biblestudy" id="biblestudy"/>
+              <button class="submit-button" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+            <table class="bible-studies-table">
+            <thead>
+              <tr>
+                <th>Study</th>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Location</th>
+                <th>Members</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Monday</td>
+                <td>3:00pm</td>
+                <td>B3 CAFE</td>
+                <td>Jim, Tony, Alex</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Wednesday</td>
+                <td>1:00pm</td>
+                <td>B2 CAFE</td>
+                <td>Mike, Tim</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Thursday</td>
+                <td>12:00pm</td>
+                <td>B2 ROOM 1</td>
+                <td>Rachel, Suzan, Abby</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Tuesday</td>
+                <td>11:00am</td>
+                <td>B3 CAFE</td>
+                <td>Zack, Jimtin, Rantony, Mann, Louis</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Friday</td>
+                <td>10:00am</td>
+                <td>B1 ROOM 1</td>
+                <td>Alex, Michael, Dave</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Tuesday</td>
+                <td>3:30pm</td>
+                <td>B3 CAFE</td>
+                <td>Greg, Jim, Bob</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">
+      <div class="copyright">&copy; Copyright 2021, UCS</div>
+      <div class="container">
+        <div class="logo">
+          UCS
+        </div>
+        <div class="links-to-socials">
+          <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
