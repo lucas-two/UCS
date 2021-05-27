@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css" />
     <!-- Using font-awesome for icons -->
     <script src="https://kit.fontawesome.com/bb33b8b065.js" crossorigin="anonymous"></script>
-    <title>Static Template</title>
+    <title>Umford Christian Students</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.jpg"/>
   </head>
   <body>
     <header class="page-header">
@@ -40,27 +41,27 @@
           <p class="muted">Join a Bible study and explore who Jesus is for yourself.</p>
         </div>
         <div class="container">
-          <form class="join-form" method="POST">
+          <form class="join-form" action="./bible-study-submission.html">
             <h3>Register to join</h3>
             <div class="field">
               <label for="first-name">First Name:</label>
-              <input type="text" id="first-name" name="first-name" placeholder="Enter first name">
+              <input type="text" id="first-name" name="first-name" placeholder="Enter first name" required>
             </div>
             <div class="field">
               <label for="last-name">Last Name:</label>
-              <input type="text" id="last-name" name="last-name" placeholder="Enter last name">
+              <input type="text" id="last-name" name="last-name" placeholder="Enter last name" required>
             </div>
             <div class="field">
               <label for="phone">Phone:</label>
-              <input type="tel" id="phone" name="phone" placeholder="Enter phone number">
+              <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
             </div>
             <div class="field">
               <label for="email">Email:</label>
-              <input type="email" id="email" name="email" placeholder="example@email.com">
+              <input type="email" id="email" name="email" placeholder="example@email.com" required>
             </div>
             <div class="field">
               <label for="bible-study">Bible Study:</label>
-              <select id="bible-study" name="bible-study">
+              <select id="bible-study" name="bible-study" required>
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>

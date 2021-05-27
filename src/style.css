@@ -24,16 +24,42 @@ body {
   border-top-left-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
   padding: 0.5rem;
+  background-color: #a51836;
 }
 
 .logo .text {
   border-top-right-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
   padding: 0.5rem;
+  background-color: #f0325b;
 }
 
 .muted {
   color: #a1a1a1;
+}
+
+#join-bible-study-sumbission,
+#get-connected-sumbission {
+  display: flex;
+  justify-content: center;
+}
+
+.submission-box {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  border-radius: 0.5rem;
+  background-color: #7eff7a;
+  color: black;
+}
+
+.submission-box i {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 2rem;
 }
 
 /* NAVIGATION BAR */
@@ -367,7 +393,7 @@ body {
   color: #fff;
   padding: 0.5rem;
   border: none;
-  flex:1;
+  flex: 1;
   border-top-left-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
 }
@@ -381,10 +407,9 @@ body {
   border-bottom-right-radius: 0.25rem;
   transition: color 0.25s;
   cursor: pointer;
-
 }
 
-#join-bible-study .search-bar .submit-button:hover{
+#join-bible-study .search-bar .submit-button:hover {
   color: #e0244d;
 }
 
@@ -457,7 +482,7 @@ body {
   }
 
   #whats-on .container .title,
-  #whats-on .container .subheading{
+  #whats-on .container .subheading {
     text-align: center;
   }
 
@@ -493,4 +518,3 @@ body {
     height: 198px;
   }
 }
-
